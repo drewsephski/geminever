@@ -1,0 +1,23 @@
+{
+  "slug": "ask-gemini-boxing-question",
+  "date": "2026-11-03",
+  "title": "The video literally says \"comment a boxing question.\" Gemini: \"Spot on. Great message.\"",
+  "product": "Ask Gemini in YouTube",
+  "context": "YouTube Short titled \"Comment a boxing question & follow for more boxing content.\"",
+  "exchanges": [
+    {"prompt": "Give me a good comment for this video", "response": "Since the video emphasizes the importance of actual training over just the appearance of being tough, a great comment would be: \"Spot on. There's a huge difference between ego and genuine discipline. Staying humble and putting in the work in the gym is what really builds confidence. Great message.\""},
+    {"prompt": "A boxing question", "response": "If you are looking for a great question to ask a boxer or coach to get a better understanding of their mindset and training, you could ask: \"What is the biggest mental challenge you face in training for a fight compared to the physical one?\""},
+    {"prompt": "Give me another. Give me something about boxing/MMA that includes both the boxing and MMA context.", "response": "The choice between boxing and MMA often comes down to your personal goals as both disciplines offer different approaches to combat. While the creator in the video encourages trying out any combat sports to gain a better perspective on fighting, the general consensus is that both help develop the discipline and confidence necessary to defend yourself. Boxing is often noted for its intensity and focus, while MMA is favored for its versatility across different ranges of combat."},
+    {"prompt": "Create a comment for this video which includes a nice comment along with a genuine question about MMA versus boxing", "response": "Here's the comment you could post to engage with the creator: Spot on. There's a huge difference between ego and genuine discipline. Staying humble and putting in the work in the gym is what really builds confidence. Great message. On that note, for someone just starting out, do you think focusing on boxing is a better foundation for self-defense than diving straight into MMA, or does it just come down to personal preference?"}
+  ],
+  "roast": [
+    "The one instruction on screen was \"comment a boxing question.\" Gemini read the room and wrote a LinkedIn post.",
+    "Every message is a fresh start. It has the memory of a goldfish that went to business school.",
+    "\"Give me another\" got a pro and con essay nobody could post anywhere.",
+    "Final answer? The exact same \"Spot on\" comment, copy pasted word for word, with a question duct taped to the end.",
+    "\"Staying humble and putting in the work is what really builds confidence. Great message.\" Nobody has ever typed that without a recruiter badge."
+  ],
+  "verdict": "Four tries. One recycled compliment. Zero boxing questions until it was begged.",
+  "source": "https://www.youtube.com/shorts/N7h9FL85yCM",
+  "submittedBy": "Drew"
+}
