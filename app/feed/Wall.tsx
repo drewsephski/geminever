@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { FeedItem } from "@/lib/posts";
+import Reactions from "../Reactions";
 const PRESETS = [
   { id: "all", label: "All", hint: "Every faceplant" },
   { id: "goldfish", label: "🐟 Goldfish Memory", hint: "Forgets context" },
@@ -12,7 +13,7 @@ const PRESETS = [
   { id: "wrong", label: "🤯 Confidently Wrong", hint: "Wrong, loudly" },
   { id: "sponsored", label: "📺 Sponsored By Nobody", hint: "Random citations" },
 ];
-export default function Wall({ items }: { items: FeedItem[] }) {
+export default function Wall({ items, counts = {} }: { items: FeedItem[]; counts?: Record<string, Record<string, number>> }) {
   const [f, setF] = useState("all");
   const [real, setReal] = useState(false);
   const pool = items.filter(i => !real || !i.mock);
@@ -33,6 +34,7 @@ export default function Wall({ items }: { items: FeedItem[] }) {
           <span className="text-neutral-500">{i.date}</span><span className="text-neutral-400">{i.product}</span></div>
         <div className="mt-3 text-lg font-medium leading-snug tracking-[-0.02em] text-balance">{i.href ? <Link href={i.href} className="transition-colors hover:text-white/80">{i.title}</Link> : i.title}</div>
         {i.verdict && <div className="mt-2 text-[15px] text-red-300">🔥 {i.verdict}</div>}
+        {i.href && !i.mock && <Reactions slug={i.slug} initial={counts[i.slug] || {}} />}
         {i.href && <Link href={i.href} className="mt-3 inline-block font-mono text-xs uppercase tracking-widest text-neutral-400 transition-colors hover:text-white">See the receipts →</Link>}
       </li>))}</ul>
   </div>);

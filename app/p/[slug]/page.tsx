@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { getPost, getPosts, roasts } from "@/lib/posts";
+import { getCounts } from "@/lib/reactions";
+export const dynamic = "force-dynamic";
 import PostCard from "../../PostCard";
 type P = { params: Promise<{ slug: string }> };
 export const generateStaticParams = () => getPosts().map(p => ({ slug: p.slug }));
@@ -12,5 +14,5 @@ export async function generateMetadata({ params }: P) {
 }
 export default async function Page({ params }: P) {
   const p = getPost((await params).slug); if (!p) notFound();
-  return <div className="mx-auto max-w-3xl pt-12"><PostCard p={p} full /></div>;
+  return <div className="mx-auto max-w-3xl pt-12"><PostCard p={p} full counts={(await getCounts([p.slug]))[p.slug]} /></div>;
 }

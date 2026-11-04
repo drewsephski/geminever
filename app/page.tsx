@@ -1,8 +1,11 @@
 import { getPosts } from "@/lib/posts";
 import PostCard from "./PostCard";
 import Link from "next/link";
-export default function Home() {
+import { getCounts } from "@/lib/reactions";
+export const dynamic = "force-dynamic";
+export default async function Home() {
   const posts = getPosts();
+  const counts = await getCounts(posts.map(p => p.slug));
   return (<>
     <section className="relative pt-16 pb-14 text-center sm:pt-24 sm:pb-20">
       <div className="pointer-events-none absolute left-1/2 top-10 -z-10 h-64 w-64 -translate-x-1/2 rounded-full bg-[#9b72cb] blur-[120px] glow" />
@@ -16,6 +19,6 @@ export default function Home() {
         <a href="/feed.xml" className="rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-neutral-200 transition hover:border-white/35">Subscribe via RSS</a>
       </div>
     </section>
-    <div className="mx-auto max-w-3xl space-y-8">{posts.map(p => <PostCard key={p.slug} p={p} />)}</div>
+    <div className="mx-auto max-w-3xl space-y-8">{posts.map(p => <PostCard key={p.slug} p={p} counts={counts[p.slug]} />)}</div>
   </>);
 }
