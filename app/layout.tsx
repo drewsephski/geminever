@@ -19,7 +19,7 @@ export default function L({ children }: { children: React.ReactNode }) {
             <img src="/gemini.svg" alt="" className="h-7 w-7 opacity-90" />
             <span className="absolute left-[-3px] right-[-3px] top-1/2 h-[3px] -translate-y-1/2 rotate-45 rounded-full bg-blood shadow-[0_0_0_2px_#0b0b0c]" />
           </span>
-          <span>Gemi<span className="strike text-blood">Never</span></Link>
+          <span>Gemi<span className="strike text-blood">Never</span></span></Link>
         <nav className="flex items-center gap-1">
           <Link href="/feed" className={`${nav} text-blood hover:bg-blood hover:text-black`}>The Wall<span className="hidden sm:inline"> of Fuckups</span></Link>
           <a href="/feed.xml" className={`${nav} text-neutral-400 hover:bg-white/10 hover:text-white`}>RSS</a>
