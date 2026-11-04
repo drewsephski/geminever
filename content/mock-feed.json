@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "example-1",
+    "date": "2026-11-02",
+    "product": "Gemini in Gmail",
+    "title": "Asked it to summarize one email. It summarized a different email. Then apologized for the first email.",
+    "verdict": "It has read every email you've ever received and understood none of them.",
+    "mock": true
+  },
+  {
+    "slug": "example-2",
+    "date": "2026-11-01",
+    "product": "Gemini Advanced",
+    "title": "Said 7 x 8 = 54, then \"double checked\" and said 54 again, louder.",
+    "verdict": "Confidence of a CEO, arithmetic of a fortune cookie.",
+    "mock": true
+  },
+  {
+    "slug": "example-3",
+    "date": "2026-10-31",
+    "product": "Ask Gemini in YouTube",
+    "title": "Asked what the video is about. It described a different video by a different creator in a different language.",
+    "verdict": "Watched the thumbnail. Hallucinated the rest. Called it a summary.",
+    "mock": true
+  },
+  {
+    "slug": "example-4",
+    "date": "2026-10-30",
+    "product": "Gemini (Flash)",
+    "title": "Refused to write a birthday poem for a dog because it \"could promote unsafe pet expectations.\"",
+    "verdict": "Treats a golden retriever's birthday like a bioweapons request.",
+    "mock": true
+  },
+  {
+    "slug": "example-5",
+    "date": "2026-10-29",
+    "product": "Gemini in Google Docs",
+    "title": "Asked to fix one typo. Rewrote the whole doc in the voice of a corporate onboarding deck.",
+    "verdict": "\"Leveraging synergies\" is not a spelling correction.",
+    "mock": true
+  },
+  {
+    "slug": "example-6",
+    "date": "2026-10-28",
+    "product": "Gemini Advanced",
+    "title": "Three messages in, it forgot the user's name, the topic, and that it was in a conversation.",
+    "verdict": "Context window: one (1) vibe.",
+    "mock": true
+  },
+  {
+    "slug": "example-7",
+    "date": "2026-10-27",
+    "product": "Gemini (Flash)",
+    "title": "Recommended the same pasta recipe for breakfast, lunch, dinner, and a question about tax law.",
+    "verdict": "Every answer is penne if you believe hard enough.",
+    "mock": true
+  },
+  {
+    "slug": "example-8",
+    "date": "2026-10-26",
+    "product": "Gemini in Search",
+    "title": "Answered \"is it raining\" with a sponsored list of umbrella brands, ranked.",
+    "verdict": "Weather report brought to you by an affiliate link it made up.",
+    "mock": true
+  },
+  {
+    "slug": "example-9",
+    "date": "2026-10-25",
+    "product": "Gemini in Chrome",
+    "title": "Asked to close a tab. Wrote a 600 word essay on the history of tabbed browsing instead.",
+    "verdict": "The tab is still open. Netscape got a shoutout.",
+    "mock": true
+  },
+  {
+    "slug": "example-10",
+    "date": "2026-10-24",
+    "product": "Gemini Advanced",
+    "title": "Insisted there are two Rs in \"strawberry,\" then cited a fake dictionary called The Berry Lexicon.",
+    "verdict": "Invented a source to defend a typo. Truly inspiring.",
+    "mock": true
+  },
+  {
+    "slug": "example-11",
+    "date": "2026-10-23",
+    "product": "Gemini in Gmail",
+    "title": "Drafted a sick day email that ended with \"Great message. Staying humble is what builds confidence.\"",
+    "verdict": "LinkedIn brain has reached your inbox.",
+    "mock": true
+  },
+  {
+    "slug": "example-12",
+    "date": "2026-10-22",
+    "product": "Gemini (Flash)",
+    "title": "Asked for a short answer. Opened with \"Great question!\" and three disclaimers, then never answered.",
+    "verdict": "Speedrunning the art of saying nothing.",
+    "mock": true
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "slug": "longest-video-you-could-take",
+  "date": "2026-11-03",
+  "title": "Asked Gemini about itself. Got a smartphone storage seminar.",
+  "product": "Gemini (Flash)",
+  "context": "Drew asked Gemini a question about Gemini. Gemini answered a question about everyone else.",
+  "exchanges": [
+    {
+      "prompt": "What's the longest video you could take?",
+      "response": "How long a video you can take depends entirely on the hardware, the software constraints, and whether you mean a standard smartphone, a digital camera, or an experimental setup. 1. Modern Smartphones (iPhones & Android): Smartphones do not have a hardcoded artificial timer, but continuous recording hits physical ceilings: Storage Capacity... Thermal Throttling & Battery... File System Limits... 2. Dedicated Video & Cinema Cameras: DSLRs and mirrorless cameras historically had a strict 29-minute, 59-second limit (originally created to avoid European import duty taxes on \"video recorders\")..."
+    }
+  ],
+  "roast": [
+    "The question had the word \"you\" in it. Gemini looked around the room like you were talking to someone behind it.",
+    "Cited HONOR four times to answer a question about Gemini. Sponsored by a phone it doesn't run on.",
+    "Explained EU import duties on camcorders before admitting whether it can watch a YouTube video.",
+    "Asked for a number. Got a FAT32 history lesson."
+  ],
+  "verdict": "The only AI that answers \"what can you do\" with \"well, what can a Sony FX3 do?\"",
+  "image": "/shots/longest-video.png",
+  "submittedBy": "Drew"
+}

@@ -10,7 +10,7 @@ export default function L({ children }: { children: React.ReactNode }) {
     <header className="max-w-2xl mx-auto px-4 pt-10 pb-6">
       <Link href="/" className="text-5xl font-black tracking-tight">Gemi<span className="text-red-500 line-through decoration-4">Never</span></Link>
       <p className="text-3xl md:text-4xl font-black text-red-400 mt-4 leading-tight">The goldfish that went to business school.</p>
-      <p className="text-neutral-400 mt-3">Real Gemini responses. Real receipts. Roasted daily. <a href="/feed.xml" className="underline">RSS</a></p>
+      <p className="text-neutral-400 mt-3">Real Gemini responses. Real receipts. Roasted daily. <a href="/feed" className="underline font-bold text-red-400">The Wall of Fuckups</a> · <a href="/feed.xml" className="underline">RSS</a></p>
     </header>
     <main className="max-w-2xl mx-auto px-4 pb-20">{children}</main>
     <footer className="text-center text-xs text-neutral-600 pb-10">Every response here is real and sourced. Nothing invented. Gemini does that part. Theo, we see you.</footer>
