@@ -26,5 +26,11 @@
   "tags": [
     "count",
     "goldfish"
-  ]
+  ],
+  "roastHints": {
+    "2": {
+      "text": "Theo, fact check?",
+      "href": "https://www.linkedin.com/in/drewsepeczi"
+    }
+  }
 }

@@ -22,7 +22,7 @@ export default function PostCard({ p, full }: { p: Post & { image?: string }; fu
       {p.image && <img src={p.image} alt="Screenshot of the Gemini response" className="mt-6 w-full rounded-2xl border border-white/[0.07]" loading="lazy" />}
       <div className="mt-6 rounded-2xl border border-blood/20 bg-gradient-to-b from-blood/[0.08] to-transparent p-5 sm:p-6">
         <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-blood">The Roast</div>
-        <ul className="mt-3 space-y-2.5 text-[15px] leading-relaxed text-neutral-200">{roasts(p).map((r, i) => <li key={i} className="flex gap-2.5"><span aria-hidden>🔥</span><span>{r}</span></li>)}</ul>
+        <ul className="mt-3 space-y-2.5 text-[15px] leading-relaxed text-neutral-200">{roasts(p).map((r, i) => <li key={i} className="flex gap-2.5"><span aria-hidden>🔥</span><span>{r}{p.roastHints?.[String(i)] && <a href={p.roastHints[String(i)].href} target="_blank" rel="noopener noreferrer" className="ml-2 inline-block -rotate-2 rounded-full border border-dashed border-sky-400/50 px-2 py-0.5 align-middle font-mono text-[11px] text-sky-300 transition hover:rotate-0 hover:bg-sky-400/10">{p.roastHints[String(i)].text} ↗</a>}</span></li>)}</ul>
         {p.verdict && <p className="mt-5 border-t border-white/[0.06] pt-4 text-xl font-medium leading-snug tracking-[-0.02em] text-white text-balance">{p.verdict}</p>}
       </div>
       {p.source && <a href={p.source} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-widest text-neutral-500 transition-colors hover:text-white">Source ↗</a>}

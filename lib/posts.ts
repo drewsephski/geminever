@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 export type Exchange = { prompt: string; response: string };
 export type Post = { slug: string; date: string; title: string; product?: string; context?: string;
-  exchanges: Exchange[]; roast: string[] | string; verdict?: string; source?: string; submittedBy?: string; tags?: string[] };
+  exchanges: Exchange[]; roast: string[] | string; verdict?: string; source?: string; submittedBy?: string; tags?: string[]; roastHints?: Record<string, { text: string; href: string }> };
 const dir = path.join(process.cwd(), "content/posts");
 export function getPosts(): Post[] {
   return fs.readdirSync(dir).filter(f => f.endsWith(".json"))
