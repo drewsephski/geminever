@@ -1,3 +1,1 @@
-{"name":"geminever","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},
-"dependencies":{"next":"15.5.4","react":"19.1.1","react-dom":"19.1.1"},
-"devDependencies":{"tailwindcss":"4.1.13","@tailwindcss/postcss":"4.1.13","typescript":"5.9.2","@types/react":"19.1.13","@types/node":"20.19.17"}}
+{"name":"geminever","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"next":"^16.4.5","react":"19.1.1","react-dom":"19.1.1"},"devDependencies":{"@tailwindcss/postcss":"4.1.13","@types/node":"20.19.17","@types/react":"19.1.13","tailwindcss":"4.1.13","typescript":"5.9.2"}}
