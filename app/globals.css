@@ -1,25 +1,43 @@
 @import "tailwindcss";
 @theme {
-  --font-display: var(--font-display), ui-sans-serif, system-ui;
-  --font-sans: var(--font-body), ui-sans-serif, system-ui;
+  --font-sans: var(--font-gsans), ui-sans-serif, system-ui;
+  --font-display: var(--font-gsans), ui-sans-serif, system-ui;
   --font-mono: var(--font-mono), ui-monospace, monospace;
-  --color-ink: #0b0b0c;
-  --color-panel: #121214;
-  --color-line: #26262b;
-  --color-blood: #ff3b30;
+  --color-ink: #08080a;
+  --color-panel: #101013;
+  --color-line: #ffffff14;
+  --color-blood: #ff453a;
 }
+:root { --gem: linear-gradient(90deg,#4285f4 0%,#9b72cb 55%,#d96570 100%); }
 html { scroll-behavior: smooth; }
-body { background: var(--color-ink); color: #ececef; -webkit-font-smoothing: antialiased;
-  background-image: radial-gradient(circle at 1px 1px, #ffffff0a 1px, transparent 0); background-size: 22px 22px; }
-::selection { background: var(--color-blood); color: #000; }
-:focus-visible { outline: 2px solid var(--color-blood); outline-offset: 3px; border-radius: 6px; }
-@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-.rise { animation: rise .55s cubic-bezier(.2,.7,.2,1) both; }
+body { background: var(--color-ink); color: #e8e8ec; -webkit-font-smoothing: antialiased; letter-spacing: -0.011em; }
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(60rem 30rem at 50% -10%, #4285f41f, transparent 60%), radial-gradient(40rem 24rem at 90% 0%, #d965701a, transparent 60%); }
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .05; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+body > * { position: relative; z-index: 1; }
+::selection { background: #9b72cb; color: #fff; }
+:focus-visible { outline: 2px solid #9b72cb; outline-offset: 3px; border-radius: 8px; }
+.gem-text { background: var(--gem); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gem-border { position: relative; }
+.gem-border::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: var(--gem);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+  opacity: 0; transition: opacity .35s ease; pointer-events: none; }
+.gem-border:hover::before { opacity: .9; }
+.lift { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, border-color .35s ease; }
+.lift:hover { transform: translateY(-3px); box-shadow: 0 24px 60px -24px #9b72cb40; }
+.strike { text-decoration: line-through; text-decoration-thickness: .1em; text-decoration-color: var(--color-blood); }
+@keyframes rise { from { opacity: 0; transform: translateY(16px); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+.rise { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+.rise-2 { animation-delay: .08s } .rise-3 { animation-delay: .16s } .rise-4 { animation-delay: .24s }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse-glow { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: .9; transform: scale(1.08); } }
+.sparkle-spin { animation: spin 18s linear infinite; }
+.glow { animation: pulse-glow 4s ease-in-out infinite; }
 @supports (animation-timeline: view()) {
-  .reveal { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 40%; }
+  .reveal { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
-.strike { text-decoration: line-through; text-decoration-thickness: .12em; text-decoration-color: var(--color-blood); }

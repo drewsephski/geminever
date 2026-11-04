@@ -12,5 +12,5 @@ export async function generateMetadata({ params }: P) {
 }
 export default async function Page({ params }: P) {
   const p = getPost((await params).slug); if (!p) notFound();
-  return <PostCard p={p} full />;
+  return <div className="mx-auto max-w-3xl pt-12"><PostCard p={p} full /></div>;
 }
