@@ -2,14 +2,28 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { FeedItem } from "@/lib/posts";
+const PRESETS = [
+  { id: "all", label: "All", hint: "Every faceplant" },
+  { id: "goldfish", label: "🐟 Goldfish Memory", hint: "Forgets context" },
+  { id: "count", label: "🧮 Can't Count", hint: "Math and counting" },
+  { id: "copypaste", label: "🔁 Copy Paste Energy", hint: "Recycled answers" },
+  { id: "linkedin", label: "👔 LinkedIn Mode", hint: "Corporate slop" },
+  { id: "refuses", label: "🙅 Refuses Everything", hint: "Says no to harmless stuff" },
+  { id: "wrong", label: "🤯 Confidently Wrong", hint: "Wrong, loudly" },
+  { id: "sponsored", label: "📺 Sponsored By Nobody", hint: "Random citations" },
+];
 export default function Wall({ items }: { items: FeedItem[] }) {
-  const products = ["All", ...Array.from(new Set(items.map(i => i.product || "Gemini")))];
-  const [f, setF] = useState("All");
-  const shown = items.filter(i => f === "All" || (i.product || "Gemini") === f);
+  const [f, setF] = useState("all");
+  const [real, setReal] = useState(false);
+  const pool = items.filter(i => !real || !i.mock);
+  const pills = PRESETS.filter(p => p.id === "all" || items.some(i => i.tags?.includes(p.id)));
+  const shown = pool.filter(i => f === "all" || i.tags?.includes(f));
   return (<div className="mt-10">
-    <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">{products.map(p => (
-      <button key={p} onClick={() => setF(p)} aria-pressed={f === p}
-        className={`shrink-0 rounded-full border px-3.5 py-1.5 text-sm transition-all duration-200 ${f === p ? "border-blood bg-blood font-bold text-black scale-[1.03]" : "border-line text-neutral-300 hover:border-blood/70 hover:text-white"}`}>{p}</button>))}</div>
+    <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">{pills.map(p => (
+      <button key={p.id} onClick={() => setF(p.id)} aria-pressed={f === p.id} title={p.hint}
+        className={`shrink-0 rounded-full border px-3.5 py-1.5 text-sm transition-all duration-200 ${f === p.id ? "border-blood bg-blood font-bold text-black scale-[1.03]" : "border-line text-neutral-300 hover:border-blood/70 hover:text-white"}`}>{p.label}</button>))}
+      <button onClick={() => setReal(!real)} aria-pressed={real}
+        className={`shrink-0 rounded-full border px-3.5 py-1.5 text-sm transition-all duration-200 ${real ? "border-green-500 bg-green-500 font-bold text-black scale-[1.03]" : "border-green-700/60 text-green-400 hover:border-green-500"}`}>🧾 Receipts Only</button></div>
     <p className="mt-4 font-mono text-xs uppercase tracking-widest text-neutral-500">{shown.length} fuckups and counting.</p>
     <ul className="mt-5 space-y-3">{shown.map(i => (
       <li key={i.slug} id={i.slug} className={`reveal rounded-2xl border p-5 transition-colors duration-200 ${i.mock ? "border-yellow-700/40 bg-yellow-950/10 hover:border-yellow-500/60" : "border-green-700/50 bg-panel hover:border-green-500/80"}`}>

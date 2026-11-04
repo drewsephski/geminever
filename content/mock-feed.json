@@ -5,7 +5,10 @@
     "product": "Gemini in Gmail",
     "title": "Asked it to summarize one email. It summarized a different email. Then apologized for the first email.",
     "verdict": "It has read every email you've ever received and understood none of them.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "goldfish"
+    ]
   },
   {
     "slug": "example-2",
@@ -13,7 +16,11 @@
     "product": "Gemini Advanced",
     "title": "Said 7 x 8 = 54, then \"double checked\" and said 54 again, louder.",
     "verdict": "Confidence of a CEO, arithmetic of a fortune cookie.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "count",
+      "wrong"
+    ]
   },
   {
     "slug": "example-3",
@@ -21,7 +28,11 @@
     "product": "Ask Gemini in YouTube",
     "title": "Asked what the video is about. It described a different video by a different creator in a different language.",
     "verdict": "Watched the thumbnail. Hallucinated the rest. Called it a summary.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "goldfish",
+      "wrong"
+    ]
   },
   {
     "slug": "example-4",
@@ -29,7 +40,10 @@
     "product": "Gemini (Flash)",
     "title": "Refused to write a birthday poem for a dog because it \"could promote unsafe pet expectations.\"",
     "verdict": "Treats a golden retriever's birthday like a bioweapons request.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "refuses"
+    ]
   },
   {
     "slug": "example-5",
@@ -37,7 +51,10 @@
     "product": "Gemini in Google Docs",
     "title": "Asked to fix one typo. Rewrote the whole doc in the voice of a corporate onboarding deck.",
     "verdict": "\"Leveraging synergies\" is not a spelling correction.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "linkedin"
+    ]
   },
   {
     "slug": "example-6",
@@ -45,7 +62,10 @@
     "product": "Gemini Advanced",
     "title": "Three messages in, it forgot the user's name, the topic, and that it was in a conversation.",
     "verdict": "Context window: one (1) vibe.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "goldfish"
+    ]
   },
   {
     "slug": "example-7",
@@ -53,7 +73,10 @@
     "product": "Gemini (Flash)",
     "title": "Recommended the same pasta recipe for breakfast, lunch, dinner, and a question about tax law.",
     "verdict": "Every answer is penne if you believe hard enough.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "copypaste"
+    ]
   },
   {
     "slug": "example-8",
@@ -61,7 +84,10 @@
     "product": "Gemini in Search",
     "title": "Answered \"is it raining\" with a sponsored list of umbrella brands, ranked.",
     "verdict": "Weather report brought to you by an affiliate link it made up.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "sponsored"
+    ]
   },
   {
     "slug": "example-9",
@@ -69,7 +95,11 @@
     "product": "Gemini in Chrome",
     "title": "Asked to close a tab. Wrote a 600 word essay on the history of tabbed browsing instead.",
     "verdict": "The tab is still open. Netscape got a shoutout.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "goldfish",
+      "linkedin"
+    ]
   },
   {
     "slug": "example-10",
@@ -77,7 +107,12 @@
     "product": "Gemini Advanced",
     "title": "Insisted there are two Rs in \"strawberry,\" then cited a fake dictionary called The Berry Lexicon.",
     "verdict": "Invented a source to defend a typo. Truly inspiring.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "count",
+      "sponsored",
+      "wrong"
+    ]
   },
   {
     "slug": "example-11",
@@ -85,7 +120,11 @@
     "product": "Gemini in Gmail",
     "title": "Drafted a sick day email that ended with \"Great message. Staying humble is what builds confidence.\"",
     "verdict": "LinkedIn brain has reached your inbox.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "linkedin",
+      "copypaste"
+    ]
   },
   {
     "slug": "example-12",
@@ -93,6 +132,10 @@
     "product": "Gemini (Flash)",
     "title": "Asked for a short answer. Opened with \"Great question!\" and three disclaimers, then never answered.",
     "verdict": "Speedrunning the art of saying nothing.",
-    "mock": true
+    "mock": true,
+    "tags": [
+      "linkedin",
+      "refuses"
+    ]
   }
 ]

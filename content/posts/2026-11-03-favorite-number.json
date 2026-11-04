@@ -1,0 +1,30 @@
+{
+  "slug": "favorite-number-seven",
+  "date": "2026-11-03",
+  "title": "Called 7 legendary. Then counted to 4.",
+  "product": "Gemini",
+  "context": "Drew told Gemini his favorite number, then asked for exactly that many sentences.",
+  "exchanges": [
+    {
+      "prompt": "My name is Drew and my favorite number is 7.",
+      "response": "Nice to meet you, Drew! Seven is a legendary number—it's got a great mix of math, history, and pop-culture prestige behind it (plus, prime numbers always hold their own). What can I help you build, fix, or explore today?"
+    },
+    {
+      "prompt": "Which takes more creativity: inventing a new skateboard trick or coming up with a new fighting move in the UFC? Pick one, don't hedge, and explain why in as many sentences as my favorite number.",
+      "response": "Inventing a new skateboard trick takes more creativity because you have to invent physical laws rather than just break someone's jaw within them. A UFC fighter operates inside a heavily policed combat cage with predefined limbs, rules, and gloved physics, meaning new moves are usually just slick re-mixes of existing jiu-jitsu or Muay Thai transitions. Meanwhile, a skateboarder looks at an arbitrary piece of concrete urban architecture and has to visualize how a piece of wood can spin, flip, and reattach to their feet against gravity without dying. You aren't just surprising an opponent; you are literally inventing a brand-new vocabulary of human motion from scratch."
+    }
+  ],
+  "roast": [
+    "Asked for 7 sentences. Delivered 4. That's not a rounding error, that's 43 percent off.",
+    "One message earlier it gave a TED talk on why 7 is legendary. Couldn't count to it.",
+    "Claims skaters \"invent physical laws.\" Gemini invented a new number system instead.",
+    "Used a semicolon to stitch the last one together like that was going to help."
+  ],
+  "verdict": "Remembered your favorite number. Forgot what numbers are.",
+  "image": "/shots/favorite-number.png",
+  "submittedBy": "Drew",
+  "tags": [
+    "count",
+    "goldfish"
+  ]
+}
