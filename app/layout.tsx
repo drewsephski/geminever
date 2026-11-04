@@ -14,7 +14,12 @@ export default function L({ children }: { children: React.ReactNode }) {
   return (<html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}><body className="min-h-screen font-sans">
     <header className="sticky top-0 z-30 border-b border-line/80 bg-ink/75 backdrop-blur-md">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-5 py-3">
-        <Link href="/" className="font-display text-xl tracking-tight">Gemi<span className="strike text-blood">Never</span></Link>
+        <Link href="/" className="group flex items-center gap-2 font-display text-xl tracking-tight">
+          <span className="relative inline-block h-7 w-7 -rotate-12 transition-transform duration-300 group-hover:rotate-[200deg]" aria-hidden>
+            <img src="/gemini.svg" alt="" className="h-7 w-7 opacity-90" />
+            <span className="absolute left-[-3px] right-[-3px] top-1/2 h-[3px] -translate-y-1/2 rotate-45 rounded-full bg-blood shadow-[0_0_0_2px_#0b0b0c]" />
+          </span>
+          <span>Gemi<span className="strike text-blood">Never</span></Link>
         <nav className="flex items-center gap-1">
           <Link href="/feed" className={`${nav} text-blood hover:bg-blood hover:text-black`}>The Wall<span className="hidden sm:inline"> of Fuckups</span></Link>
           <a href="/feed.xml" className={`${nav} text-neutral-400 hover:bg-white/10 hover:text-white`}>RSS</a>
@@ -27,6 +32,6 @@ export default function L({ children }: { children: React.ReactNode }) {
         The goldfish that went to <span className="text-blood">business school.</span></h1>
     </section>
     <main className="mx-auto max-w-3xl px-5 pb-24">{children}</main>
-    <footer className="border-t border-line/80 py-10 text-center font-mono text-xs text-neutral-500">Every response here is real and sourced. Nothing invented. Gemini does that part. Theo, we see you.</footer>
+    <footer className="border-t border-line/80 py-10 text-center font-mono text-xs text-neutral-500">Every response here is real and sourced. Nothing invented. Gemini does that part. Theo, we see you.<br /><span className="text-neutral-600">Gemini logo via <a href="https://svgl.app" target="_blank" rel="noreferrer" className="underline hover:text-white">svgl.app</a>. Not affiliated with Google, obviously.</span></footer>
   </body></html>);
 }

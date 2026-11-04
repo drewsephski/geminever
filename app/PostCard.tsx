@@ -14,7 +14,7 @@ export default function PostCard({ p, full }: { p: Post & { image?: string }; fu
           <div key={i} className="space-y-2.5">
             <div className="ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-md bg-blue-600 px-4 py-2.5 text-[15px] leading-snug text-white shadow-lg shadow-blue-900/30">{e.prompt}</div>
             <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-line bg-ink/70 px-4 py-3.5 text-[15px] leading-relaxed text-neutral-200">
-              <div className="mb-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-purple-400">✦ Gemini</div>{e.response}</div>
+              <div className="mb-1.5 flex items-center gap-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-purple-400"><img src="/gemini.svg" alt="" className="h-4 w-4" />Gemini</div>{e.response}</div>
           </div>))}
       </div>
       {p.image && <img src={p.image} alt="Screenshot of the Gemini response" className="mt-6 w-full rounded-2xl border border-line" loading="lazy" />}
