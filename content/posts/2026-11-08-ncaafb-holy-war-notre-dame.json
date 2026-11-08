@@ -1,0 +1,25 @@
+{
+  "slug": "ncaafb-holy-war-notre-dame",
+  "date": "2026-11-08",
+  "title": "No. 8 BYU at No. 3 Utah: BYU 28, No. 2 Notre Dame 24",
+  "product": "Google Search AI Overview",
+  "context": "Someone searched ncaafb on the Saturday of the BYU-Utah Holy War. AI Overview pasted last month's Notre Dame score onto the rivalry and listed the game twice.",
+  "exchanges": [
+    {
+      "prompt": "ncaafb",
+      "response": "The College Football Schedule on ESPN and the AP Top 25 College Football Poll feature a massive Week 10 slate of games on November 7, 2026, headlined by multiple top-10 matchups.\n\nWeek 10 Key Top 25 Matchups & Scores\nNo. 8 BYU at No. 3 Utah: BYU 28, No. 2 Notre Dame 24\nNo. 4 Notre Dame at No. 1 Miami (FL)\nNo. 5 Alabama at No. 14 LSU\nNo. 7 Texas at No. 18 Missouri\nOregon at No. 12 Ohio State\nNo. 3 Utah at No. 9 BYU (\"Holy War\")"
+    }
+  ],
+  "roast": [
+    "The lead \"key matchup\" is \"No. 8 BYU at No. 3 Utah: BYU 28, No. 2 Notre Dame 24.\" That is three teams in one score line. Utah hosted. Notre Dame lost. The scoreboard hired a plus-one.",
+    "That 28-24 result is real. It is just from October 17, when No. 8 BYU beat No. 2 Notre Dame. Gemini grabbed last month's box score, stapled it to today's Holy War, and called it a recap.",
+    "Then the same overview lists the rivalry again: \"No. 3 Utah at No. 9 BYU (Holy War).\" Now they are also playing in Provo, and BYU dropped a ranking spot between bullets.",
+    "The actual game that Saturday was No. 9 BYU at No. 3 Utah. Utah won 28-20. Gemini kept a 28, lost the host's win, and imported an extra Fighting Irish."
+  ],
+  "verdict": "One rivalry, two stadiums, three teams, and last month's score.",
+  "source": "https://x.com/MacroHaus/status/2119133498594214317",
+  "submittedBy": "MacroHaus on X",
+  "tags": [
+    "wrong"
+  ]
+}
