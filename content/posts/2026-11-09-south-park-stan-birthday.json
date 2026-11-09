@@ -1,0 +1,23 @@
+{
+  "slug": "south-park-stan-birthday",
+  "date": "2026-11-09",
+  "title": "Asked for South Park's Stan. Got Grunkle Stan from Gravity Falls.",
+  "product": "Google Search AI Overview",
+  "context": "Someone typed four words into Google, two of them were \"South Park.\" AI Overview kept the word \"Stan\" and moved to a different town in a different state on a different network.",
+  "exchanges": [
+    {
+      "prompt": "south park stan birthday",
+      "response": "Grunkle Stan's birthday is June 15 (along with his twin brother, Ford).\n\nKey Details\nDate: June 15\nCharacter: Stanley \"Stan\" Pines from Gravity Falls"
+    }
+  ],
+  "roast": [
+    "The query was four words long. Gemini read one of them. It saw \"Stan,\" skipped \"South Park\" entirely, and drove all the way to a mystery shack in Oregon.",
+    "It even labeled its own mistake for you: \"Character: Stanley Stan Pines from Gravity Falls.\" That is not a key detail. That is a signed confession.",
+    "Stan Marsh, the actual kid from South Park, was born October 19, same as Trey Parker. That is on the first line of basically every result under the overview Gemini wrote instead.",
+    "Then it threw in a bonus twin brother nobody asked about. You wanted one Stan. You got the wrong Stan and his brother Ford."
+  ],
+  "verdict": "Searched for a fourth grader in Colorado, got a fez wearing con man in Oregon.",
+  "source": "https://x.com/KatieNoi/status/2119568480018059735",
+  "submittedBy": "KatieNoi on X",
+  "tags": ["wrong", "goldfish"]
+}
