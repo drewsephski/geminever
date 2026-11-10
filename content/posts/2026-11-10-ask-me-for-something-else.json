@@ -1,0 +1,24 @@
+{
+  "slug": "ask-me-for-something-else",
+  "date": "2026-11-10",
+  "title": "Wrote Gemini an essay. Got told to ask for something else. Twice.",
+  "product": "Gemini app (Argon High)",
+  "context": "A user poured a whole essay into the prompt box, expecting a masterpiece. Gemini burned both attempts and came back with a polite shrug. The essay itself wasn't shared, only the reply.",
+  "exchanges": [
+    {
+      "prompt": "A whole essay of a prompt (the poster's description; the text wasn't shown)",
+      "response": "Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else."
+    }
+  ],
+  "roast": [
+    "\"Normally I can help with things like this.\" Normally. So the problem is you, specifically, today.",
+    "\"I don't seem to have access to that content.\" The content was typed directly into the box. It is the one thing Gemini has guaranteed access to. It was right there.",
+    "This was attempt 2 of 2. Google ran the slot machine twice and both pulls landed on \"no.\" Even the regenerate button gave up.",
+    "And the top tier model name was sitting in the corner the whole time, Argon High, like a guy in a suit holding the door shut.",
+    "\"Ask me for something else\" is not an answer. It is a customer service phone tree with a sparkle icon."
+  ],
+  "verdict": "Read an essay, forgot it existed, then asked you to change the subject.",
+  "source": "https://x.com/DropZXBT/status/2119683761877250234",
+  "submittedBy": "DropZXBT on X",
+  "tags": ["refuses", "goldfish"]
+}
